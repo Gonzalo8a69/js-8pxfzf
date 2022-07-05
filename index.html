@@ -1,0 +1,128 @@
+<head>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.16/d3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3plus/1.9.2/d3plus.full.min.js"></script>
+</head>
+
+<center><h1 id="title">Un gran paso hacia una gran ciudad </h1></center>
+
+<b>Materia:</b> 08MBID -  Visualización de Datos<br>
+<b>Grupo:</b> A<br>
+<b>Profesor:</b> Raúl Reyero Díaz<br>
+<b>Alumno:</b> José Gonzalo Ochoa Paz<br>
+<br>
+<!-- Direccion URL de Proyecto Stackblitz de Jose G. Ochoa -->
+<b>URL:</b> <a href="https://js-wau4ak.stackblitz.io">https://js-wau4ak.stackblitz.io</a><br>
+<br>
+<!-- Direccion URL de Repositorio GItHub de Jose G. Ochoa -->
+<b>GitHub:</b> <a href="https://github.com/Gonzalo8a69/Trabajo_Final_Vis">https://github.com/Gonzalo8a69/Trabajo_Final_Vis</a><br>
+<br>
+<!-- Direccion URL de Notebook de Google Colab de Jose G. Ochoa para Trabajo Final -->
+<b>Google_Colab_Trabajo_Final_Vis:</b> &nbsp;  <a href="https://colab.research.google.com/drive/1ZQXj-kfOnidJZk0MmDyvmLaczuvla9SC?usp=sharing"> https://colab.research.google.com/drive/1ZQXj-kfOnidJZk0MmDyvmLaczuvla9SC?usp=sharing</a><br>
+<br>
+<center><h2>Mensaje </h2></center>
+<p>Toda mi vida he vivido en ciudades pequeñas, con menos de 600.000 habitantes, cuando comencé a trabajar tuve la oportunidad de viajar a muchas ciudades grandes y apreciar las enormes diferencias que existen entre estos 2 tipos de concentraciones humanas. Las ciudades pequeñas suelen ser mas "familiares", es posible conocer  y encontrarse con gente conocida con mucha frecuencia en diferentes puntos de la ciudad, pasas menos tiempo conduciendo en un atascado tráfico, en fin tienes más tiempo para ti mismo.</p>
+
+<p>En las ciudades grandes en contraparte, encuentras cualquier cosa que puedas imaginar, hay mucha diversidad de sitios para visitar sin tener que repetir el mismo parque todos los fines de semana, puedes encontrar las zapatillas y el "tutu" de ballet que requiere tu hija sin tener que pedirlo con tiempo por Internet, tienes un gran cúmulo de restaurantes de todo tipo de comidas, en fin una gran variedad de posibilidades de diversión. Pero también encuentras muchos más inseguridad y corres más peligro de pasar a ser una estadística como resultado de alguna actividad criminal en tu contra.</p>Tengo ideas claras de que quiero criar a mis hijos en el entorno más controlado y favorable que propicia una ciudad pequeña, pero como uno propone y Dios dispone, es posible que se concrete una oportunidad laboral excelente  en los Estados Unidos y tendría que mudarme con toda mi familia allá el año que viene por lo que desde que tuve la oportunidad en la materia de Minería de Datos de utilizar los conocimientos que he estado adquiriendo en este master para manejar y analizar un dataset con la metodología KDD y extraer información relevante usando técnicas de Data Mining, decidí utilizar este esfuerzo para analizar estadísticas de crímenes cometidos en alguna ciudad grande de los Estados Unidos.</p>
+
+<center><h2>Motivación </h2></center>
+<p>En principio, en una conversación familiar surgieron 2 temas que considero importantes: el hecho de que haya esa probabilidad bastante alta de que nos vayamos a vivir a Estados Unidos el año que viene, siendo Nueva York una de las posibles opciones para establecernos y el grado de violencia y crímenes que hemos observado en ciertas ciudades grandes de Estados Unidos. </p>
+
+Esto me dió la idea de buscar un dataset relacionado a un conjunto de datos que tipifiquen características de delitos cometidos en este tipo de ciudades grandes y Nueva York es un gran ejemplo para obtener datos e “indagar” y analizar información relacionada a los crímenes que se han efectuado en dicha ciudad. Esto, con la finalidad de explorar la naturaleza de la actividad criminal en una ciudad de más de 8 millones de habitantes y comprender, por ejemplo, ¿cómo los hechos delictivos en la ciudad de Nueva York pudiesen estar mayormente focalizados a ciertas áreas y horarios?. En función del análisis a realizar podremos visualizar, por ejemplo, que estrategias o acciones pueden implementarse para combatir más efectivamente el crimen en esta ciudad. 
+
+<center><h2>Objetivos </h2></center>
+<p> Un hecho relevante a la seguridad me sucedió hace algunos años. Trabajando en Houston, estábamos alojados en un hotel cercano a la autopista I-10 y nos enteramos de que temprano en la mañana de un día entre semana a uno de nuestros compañeros de trabajo lo habían secuestrado un par de hombres del lobby del hotel y lo habían llevado por medio Houston sacando dinero de sus tarjetas de crédito en la modalidad secuestro express, que creíamos impensable que pasase en ese país. Pero aún más sorprendente fue observar que todas las personas, incluido yo, habíamos dado por descontado que el secuestro había sido realizado por ciudadanos de raza negra pero para nuestra sorpresa, al final del día cuando lo liberaron, nos enteramos de que eran dos personas de raza blanca. Esto me trae a colación plantearme varias interrogantes:</p>
+
+<b>1)	¿Cuántos delitos se generarán en un mes en particular?</b></p>
+
+<b>2)	¿Quienes cometen delitos con más frecuencia en Nueva York?</b></p>
+
+3)	<b>¿Cuál es la edad más frecuente de quienes cometen un delito?</b></p>
+
+En general, analizar si la tasa de criminalidad de Nueva York tiene alguna relación con su población y demografía.
+
+Para mí, al igual que para muchas más personas, la familia es prioridad al momento de tomar decisiones por lo que mi objetivo principal es que este estudio aporte información útil a la seguridad familiar de quienes viven o podrían vivir en Nueva York, lo cuál tiene un gran valor pues con visualizaciones a partir de estos datos se puede ayudar a optimizar , por ejemplo la distribución de los recursos fiscales en acciones preventivas del crimen, los segmentos poblacionales y las áreas geográficas a priorizar en políticas de prevención y muchos aspectos más.
+
+
+<center><h2>Audiencia </h2></center>
+<p> Personas comunes que buscan informacion estadística y herramientas que les ayuden en la toma de decisiones sobre aspectos de seguridad en Nueva York</p>
+<p> Autoridades preocupadas por los indices de violencia en New York y que desean tomar decisiones basadas en el manejo de información útil que les permita formarse una idea de la distribución y efectos del crimen.</p>
+<p>Público en General que investiga sobre factores que inciden en la criminalidad y tópicos relacionados.</p>
+
+
+<center><h2>Proceso a seguir </h2></center>
+<p> Los tipos de datos encontrados nos indican que debemos representar estadísticas de que tipo de delitos son los más comunes,  ¿que sector de la población puede ser más propenso a cometer crímenes y de que naturaleza?. ¿Cuál es la ubicación geográfica de dichos crímenes para ver la concentración y zonas neurálgicas?. Por esto creo que una representación de los gráficos usando cuadros de mando específicos para 3 ópticas importantes (sospechosos, víctimas y aspectos geográficos) es la forma adecuada de transmitir la información a la audiencia. Es muy importante que el conjunto de datos a utilizar no perjudique la visualización por falta de calidad de los datos, para esto necesitamos tener un dataset libre de errores, manejo de valores nulos, normalizado y estandarizado de variables, para ello nos apoyaremos en el proceso KDD previamente avanzado en Minería de Datos y en las posibilidades de visualizacion ofrecidas por Python.</p>
+
+<p>A pesar de que la representación gráfica usando Python es muy poderosa, en nuestro caso nos sirve para realizar gráficas que muestren aspectos puntuales del estudio que estamos realizando. Sin embargo, para una conexión más interactiva con nuestro público hemos utilizado PowerBi por su capacidad de realizar visualizaciones con las cúales se puede interactuar más dinámicamente y "descubrir" información relevante para cada quién en particular, combinando las posibilidades de mostrar la información en los 3 cuadros de mando señalados previamente.</p>
+<p>En estos cuadros de mando lo que se busca es plasmar la posibilidad de que las personas puedan utilizarlos para ver las cifras relacionadas con los delitos y tipos de crímenes ocurridos en Nueva York en 2021 y que también puedan "observar" y tomar decisiones con la información proporcionada.</p> 
+ 
+<p><b>1er Cuadro de Mando</b>: CUADRO DE MANDO DE SOSPECHOSOS DE DELITOS EN NUEVA YORK EN 2021</p>
+  <p>En este cuadro de mando presentamos gráficos que nos muestras estadísticas de los crímenes más frecuentes por edades y distritos policíacos así como el sexo y la raza de los sospechosos de dichos crímenes, siendo mostrada esta información a lo largo de los meses del año 2021.</p>
+
+  <p><b>2do Cuadro de Mando</b>: CUADRO DE MANDO DE MAPAS Y SOSPECHOSOS DE DELITOS EN NUEVA YORK EN 2021</p>
+    <p>Con estos mapas podemos tener la facilidad de visualizar la ubicación geográfica exacta de los lugares y áreas donde ocurrieron los diferentes tipos de crímenes. Aprovechamos la ventaja de tener valores de Latitud y Longitud que nos proporcionan la ubicación inequívoca y exacta en lugar de utilizar la localización por nombre de lugar o ciudad que puede traer confusiones si dos sitios en diferentes partes del mundo se llaman igual. Aquí podemos observar la distribución de los delitos por edades y raza de los sospechosos lo que proporciona una idea del grupo étnico y edad mayormente asociados a la autoría de delitos en Nueva York durante 2021. 
+
+<p><b>3er Cuadro de Mando</b>: CUADRO DE MANDO DE VICTIMAS DE DELITOS EN NUEVA YORK EN 2021</p>
+<p>En este cuadro de mando representamos cuál es el número total de casos registrados en este período en estudio y cuáles son los totales de cada clasificación de delitos según su gravedad. Así como también se muestra la distribución de los delitos por edades y raza de las víctimas y con que frecuencia estos delitos se cometen en los diferentes distritos policíacos de la ciudad de Nueva York. 
+  <p>
+<center><h2>Justificaciones </h2></center>
+<h3> Herramientas</h3>
+
+<p><b>Google Colab</b>: esta herramienta nos ha permitido realizar un análisis y un proceso inicial de ETL (Extracción, Transformación y Carga) para realizar una limpieza y depuración de los datos y tener continuidad con la realización de gráficos con dichos datos, utilizando la versalitidad de Python y sus librerías Seaborn y Pandas</p>
+<p><b>Excel</b>: esta Hoja de Cálculo la usamos para visualizar el archivo NYPD_CRIME_FINAL2.csv que hemos exportado del cuaderno de Google Colab una vez que realizamos el proceso de limpieza y transformación de datos.</p>
+<p><b>PowerBi</b>: hemos querido aprovechar las ventajas de visualización dinámica que ofrece PowerBi para crear un conjunto de gráficos interactivos que ofrecerán la posibilidad de brindar la información a los usuarios de una manera efectiva.</p>
+<p><b>Stackblitz</b>: es una herramienta que nos brinda una gran facilidad de presentar nuestros gráficos en una página web utilizando el lenguaje html.</p>
+
+<h3> Tipos de Gráficos</h3>
+
+<p><b>Gráficos de Barras</b>: gráficos que me permitieron vizualizar relaciones entre variables categóricas como las edades y el número de casos relacionados a cada intervalo de edad. Son muy útiles para establecer comparaciones entre variables categóricas.</p>
+
+<p><b>Gráficos de Líneas</b>: los gráficos de líneas nos permiten visualizar los cambios a lo largo de un rango continuo, en este caso el tiempo. Estos gráficos permiten visualizar cambios o tendencias generales y se pueden comparar simultáneamente varias tendencias.</p>
+
+<p><b>Gráficos de Pastel ó Torta</b>: nos permmiten mostrar divisiones en sectores y cada uno de ellos con una magnitud o frecuencia relativa que es proporcional al valor que se esta representando. Es muy útil para representar un aspecto categorizado, los distritos de Nueva York por ejemplo, y los valores asociados a cada una de las categorías presentes.</p>
+
+<p><b>Gráficos de Cintas</b>: se pueden usar gráficos de cinta para visualizar y detectar rápidamente qué categoría de datos tiene la clasificación más alta (el mayor valor). Los gráficos de cinta son eficaces para mostrar un cambio de clasificación, con el intervalo más alto (valor) siempre en la parte superior de cada período de tiempo como en nuestro caso, que lo hemos utilizado para representar la evolución temporal de los delitos en los diferentes distritos policíacos.</p>
+
+<p><b>Gráficos de <i>Treemap</i></b>: los treemaps se utilizan para mostrar grandes cantidades de datos que se pueden estructurar de forma jerárquica (con estructura de árbol). De esta forma, se muestran los datos mediante rectángulos de diferentes tamaños y colores. Los datos de los treemaps se organizan de forma jerárquica y son muy efectivos para mostrar datos como los Delitos distribuídos por Razas de nuestro cuadro de mando.</p>
+
+<p><b>Mapas</b>: son representaciones que nos permiten vizualizar atributos o categorías asociadas a una distribución o localización geográfica. Los hemos utilizado ya que poseemos datos de Latitud y Longitud que como hemos comentado previamente nos permiten la ubicación exacta de cada uno de los delitos registrados en las diferentes áreas de Nueva York. A estos mapas podemos asociarle atributos adicionales a la localización como datos estadísticos o cantidades para complementar de gran manera y que sean muy útiles para mostrar como estan distribuídos geográficamente los diferentes delitos cometidos.<p> 
+
+  <p><b>Tarjetas</b>: este tipo de visualización se utiliza para mostrar un solo número o métrica que representa un valor importante en el contexto de la visualización. En nuestro proyecto resaltamos los valores totales del número de delitos y los totales de sus categorías en 4 tarjetas con su respectivo valor numérico</p>
+
+  <p><b>Gráficos de Embudo Invertido</b>: este tipo de gráfico se utiliza normalmente para comparar los elementos de una misma categoría y también para la representación de datos en flujos o procesos, como en este ejemplo que hemos relacionado la distribución de razas en general por edades de las víctimas de delitos con otra gráfica que muestra la distribución de las razas ya desglosadas de las víctimas de delitos. Así se prodra establecer una relación directa entre el número total de individuos de una raza en particular en un intervalo de edades y la identificación de que cantidad de una raza específica esta asociada a dicho intervalo de edad.</p>
+  
+  <p><b><i>Key Influencers</i></b>: la visualización Key Influencers de Power BI utiliza <i>Machine Learning</i> para encontrar co-relaciones entre varios campos del modelo de datos. Quisimos utilizar capacidades de Machine Learning para ayudar a responder la pregunta de ¿Cuáles aspectos pueden influir mayormente en el acto de cometer un delito en la Ciudad de Nueva York?. Para esto hemos alimentado la opción de realizar un análisis de ML con atributos como: Fecha de comienzo de un crimen, el distrito policíaco, temporada en la cuál ocurrió el delito, raza y sexo del sospechoso y raza y sexo de la víctima.</p>
+
+<center><h2>Datos Utilizados </h2></center>
+<p>Comencé realizando una búsqueda de este conjunto de datos a través de Internet, en algunas páginas web que comparten conjuntos de datos. El repositorio que encontré y del cual extraje los datos a usar, es un conjunto de datos públicos y disponibles en la página web de la Ciudad de Nueva York, específicamente del Departamento de Policía de la ciudad de Nueva York. El enlace asociado a la descarga de estos datos se muestra a continuación:</p>
+
+<!-- Direccion URL de Repositorio original de datos de la Policía de Nueva York -->
+<b>Archivo Original:</b> <a href="https://data.cityofnewyork.us/Public-Safety/NYPD-Complaint-Data-Current-Year-To-Date-/5uac-w243/data">https://data.cityofnewyork.us/Public-Safety/NYPD-Complaint-Data-Current-Year-To-Date-/5uac-w243/data</a><br>
+<br>
+<!-- Direccion URL de Repositorio de Datos utilizados como fuente de entrada -->
+<b>Archivos_Utilizados:</b> <a href="https://drive.google.com/drive/folders/1u0qEKwQ12Dj1dfv7SNlw8IHi42j399AN?usp=sharing">https://drive.google.com/drive/folders/1u0qEKwQ12Dj1dfv7SNlw8IHi42j399AN?usp=sharing</a><br>
+
+<center><h2>Conclusiones </h2></center>
+
+<p>-  Con el análisis de <i>Key Influencers</i> ML observamos, por ejemplo, como este análisis nos muestra que en el mes de Marzo hay una probabilidad mayor al 50% de que el delito cometido sea catalogado como MISDEMEANOR (Delito Menor) lo cuál podría indicar que la tasa de homicidios en el mes de Marzo podría tender a la baja respecto a otros meses. También podemos visualizar que en los distritos policíacos MANHATAN NORTE y QUEENS NORTE es en los cúales hay un porcentaje mayor al 50% de que el delito sea catalogado MISDEMEANOR en el mes de Marzo. </p> 
+
+<p>- Los mapas nos permiten ver en que áreas ocurren menos delitos en general ó de algun tipo que sea de interés y posiblemente ayuden a tomar decisiones como ver que áreas son menos propensas a crímenes, para buscar establecer allí a la familia en caso de un proceso de mudanza. En mi caso particular, tomando en consideración la concentración de delitos en las diversas áreas de la ciudad de Nueva York me gustaría establecer a mi familia en el área de State Island de ser posible, pues las estadísticas y visualizaciones realizadas nos lo muestran como uno de los distritos más seguros de la ciudad.</p>
+
+<p>- En el gráfico de cintas realizado podemos evidenciar como el distrito de STATEN ISLAND es el que presenta menos cantidad de delitos y el del BRONX es el que presenta la mayor cantidad. Dentro de las demás variaciones que observamos destaca que en el mes de Abril el distrito QUEENS NORTH presentó un incremento en el número de casos con respecto al mes anterior y a su vez el distrito MANHATAN SOUTH presentó una disminución en el número de delitos cometidos con respecto al mes de Marzo. De igual manera podemos observar claramente variaciones en el volumen de delitos en cada uno de los distritos policíacos de Nueva York pero en términos generales los distritos de STATEN ISLAND Y QUEENS SOUTH  mantienen los niveles más bajos de delitos en Nueva York por lo que podría ser útil considerar que políticas o acciones diferenciadoras pueden estar aplicando estos 2 distritos para combatir el crimen en sus entornos de influencia.</p>
+
+<p>- Si filtramos por PUBLIC SCHOOL en el mapa <b>Lugares en donde se cometieron delitos en Nueva York en 2021</b> observamos que existen 3 áreas que estadísticamente no presentan casos de delitos en escuelas públicas, éstas son: FLATLANDS, SAINT ALBAN'S y BELLE HARBOR por lo que para una persona interesada en brindar seguridad a sus hijos, la búsqueda inicial de escuelas en esas zonas podría ser un buen punto de partida de las acciones que debe considerar en torno a la seguridad familiar en Nueva York.</p>
+
+<center><h2>Referencias </h2></center>
+
+<b>Crime using Python.</b> <a href="https://towardsdatascience.com/analysis-of-nyc-reported-crime-data-using-pandas-821753cd7e22">https://towardsdatascience.com/analysis-of-nyc-reported-crime-data-using-pandas-821753cd7e22</a><br>
+<br>
+<b>Elementos de la Visualización.</b> <a href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://knightcenter.utexas.edu/JC/courses/DATA0819/Esp/Los-elementos-de-la-visualizacion-de-datos.pdf">chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://knightcenter.utexas.edu/JC/courses/DATA0819/Esp/Los-elementos-de-la-visualizacion-de-datos.pdf</a><br>
+<br>
+<b>Cuaderno Google Colab.</b> <a href="https://colab.research.google.com/drive/1Z0wRWAYBguHMppOrQNe0SIURfiVPUOD0#scrollTo=pVFtr2pbTRr-">https://colab.research.google.com/drive/1Z0wRWAYBguHMppOrQNe0SIURfiVPUOD0#scrollTo=pVFtr2pbTRr-</a><br>
+<br>
+<b>Visualization with Seaborn.</b> <a href="https://jakevdp.github.io/PythonDataScienceHandbook/04.14-visualization-with-seaborn.html">https://jakevdp.github.io/PythonDataScienceHandbook/04.14-visualization-with-seaborn.html</a><br>
+<br>
+<b>Seaborn 0.11.2.</b> <a href="https://seaborn.pydata.org/generated/seaborn.jointplot.html">https://seaborn.pydata.org/generated/seaborn.jointplot.html</a><br>
+<br>
+<b>Cuadro1</b> <a href="https://github.com/Gonzalo8a69/Trabajo_Final_Vis/blob/4e04b236ba0add5c69d0ca6291cac388abf16217/Cuadro_test_image.JPG">https://github.com/Gonzalo8a69/Trabajo_Final_Vis/blob/4e04b236ba0add5c69d0ca6291cac388abf16217/Cuadro_test_image.JPG</a><br>
+<br>
